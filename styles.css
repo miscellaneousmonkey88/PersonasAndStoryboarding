@@ -1,132 +1,177 @@
-body {
+
+html {
   background-color: white;
-  font-family: 'Arial';
-  color: black;
 }
 
-@keyframes bluefade {
-  0%  {background-color:rgb(248, 219, 249); left:200px; top:200px;}
-  0% {outline: 10px solid rgb(248, 219, 249);}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-attachment: fixed;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+  }
+
+#head {
+  padding-bottom:2vw;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  /*outline: 1px solid black;*/
+  background-color: white;
+  background-image: url("h3.png");
+  background-size: cover;
+  border-radius: 4vh;
 }
 
-@keyframes pinkfade {
-  0%  {background-color:rgb(230, 219, 249); left:200px; top:200px;}
-  0% {outline: 10px solid rgb(230, 219, 249);}
+
+#title {
+  margin-right: 40px;
+  margin-left: 40px;
+  font-size: 45px;
 }
 
-#exp {
-  margin: 50px;
-  outline: 2px solid black;
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 10px 8px 10px 8px;
+#subtitle {
+  margin-right: 50px;
+  margin-left: 43px;
+  font-size: 25px;
+}
+#subtitle2 {
+  margin-right: 50px;
+  margin-left: 43px;
+  font-size: 18px;
+}
+#s {
+  margin-left: 30px;
 }
 
-#section-blocks {
-  outline: 10px solid rgb(230, 219, 249);
-  background-color: rgb(230, 219, 249);
-  border-radius: 10px;
-  font-size: 30px;
-  margin: 50px;
-  animation-name: bluefade;
-  animation-duration: 4s;
-}
-
-#section-headers {
-  margin: 25px;
-  margin-top: 26px;
-  color: black;
-  text-transform: uppercase;
-
+#hdr {
+  font-weight: 100;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    padding-left: 50px;
+    border-radius: 40px;
+    font-weight: 400;
 }
 
 #txt {
-  font-size: 16px;
-  margin: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-weight: 100;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding: 50px;
+    border-radius: 40px;
 }
 
-#pinkdash {
-  color: rgba(255, 182, 193, 0);
-  font-size: 15px;
-}
-#pinkdash2 {
-  color: rgba(255, 182, 193, 0);
-  font-size: 5px;
+#txt2 {
+  font-weight: 100;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding: 50px;
+    padding-top: 0px;
+    border-radius: 40px;
 }
 
-#subsection-block {
-  color: rgba(0, 0, 0, 0.737);
-  outline: 10px solid rgb(248, 219, 249);
-  background-color: rgb(248, 219, 249);
-  border-radius: 10px;
+#txtblack {
+  margin: 70px;
   font-size: 25px;
-  margin: 50px;
-  animation-name: pinkfade;
-  animation-duration: 4s;
-}
-
-#question-block {
-  font-size: 20px;
   color: black;
 }
 
-/* Uncomment below if images are way too big.
-Selects all image tags and makes them 500px;
- */
+#arrow {
+  text-align: center;
+  font-size: 100px;
+}
+
 img {
-  border-radius: 10px;
-  margin: 10px;
-  max-block-size: 450px;
+    max-block-size: 400px;
+    border-radius: 20px;
+    opacity: 1;
 }
 
 .gallery-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
-  display: flag;
-  text-align: center;
-  flex-basis: 1 1 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 2vw;
+    border-radius: 20px;
+    align-self: center;
+    margin: 0cm;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: black;
 }
 
-.gallery1-container {
+.gallery-container:hover {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
-  display: flag;
-  text-align: center;
-  flex-basis: 1 1 auto;
-  scale: 1.05;
+    display: flex;
+    text-align: center;
+    padding: 2vw;
+    flex-direction: column;
+    border-radius: 20px;
+    align-self: center;
+    margin: 0cm;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: black;
 }
-.gallery2-container {
+
+.gallery-container2 {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
-  display: flag;
+  display: flex;
   text-align: center;
-  flex-basis: 1 1 auto;
-  scale: 1.08;
+  flex-direction: row;
+  padding: 2vw;
+  border-radius: 20px;
+  align-self: center;
+  margin: 0cm;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  color: transparent;
 }
 
-.animate-character{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 80px;
-      margin: 50px;
+.gallery-container .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 24px;
+  color:black;
+  font-weight: 500;
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+.gallery-container:hover .middle {
+  transition: .5s ease;
+  opacity: 1;
+  position: relative;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 24px;
+  color:black;
+  font-weight: 500;
+}
+
+#block img:hover {
+  opacity: 0.3;
+}
+
+#block {
+  color: black;
 }
